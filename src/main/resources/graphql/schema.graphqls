@@ -1,0 +1,24 @@
+type Instrument {
+    id: ID
+    name: String!
+    numberOfStrings: Int
+    numberOfKeys: Int
+    has: String
+    manufacturer: String!
+    size: String
+    is: String
+    musicians: [Musician!]!
+}
+
+type Musician {
+    id: ID
+    name: String!
+    instrument: Instrument
+    bandId: Int
+}
+
+type Band {
+    id: ID
+    name: String
+    musicians: [Musician!]!
+}

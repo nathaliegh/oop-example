@@ -1,0 +1,41 @@
+# play one night
+query playNight {
+    playNight{
+        name
+        musicians {
+            id
+            name
+            instrument {
+                id
+                name
+                numberOfStrings
+                numberOfKeys
+                has
+                manufacturer
+                size
+                is
+            }
+        }
+    }
+}
+
+# play 10 nights
+query playNight {
+    playNightN(n: 10){
+        name
+        musicians {
+            id
+            name
+            instrument {
+                id
+                name
+                numberOfStrings
+                numberOfKeys
+                has
+                manufacturer
+                size
+                is
+            }
+        }
+    }
+}

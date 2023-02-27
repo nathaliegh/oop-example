@@ -1,0 +1,19 @@
+query band {
+    allBands {
+        name
+        musicians {
+            id
+            name
+            instrument {
+                id
+                name
+                numberOfStrings
+                numberOfKeys
+                has
+                manufacturer
+                size
+                is
+            }
+        }
+    }
+}

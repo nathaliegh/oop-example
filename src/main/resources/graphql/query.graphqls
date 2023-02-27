@@ -1,0 +1,5 @@
+type Query {
+    allBands: [Band!]!
+    playNight: [Band!]!
+    playNightN(n: Int): [Band!]!
+}
